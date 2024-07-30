@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@master
+      
       # When the dist_dir is ready, deploy it to neocities
       - name: Deploy to neocities
-        uses: bcomnes/deploy-to-neocities@master
+        uses: bcomnes/deploy-to-neocities@v2.0.2
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           cleanup: false
