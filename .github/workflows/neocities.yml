@@ -1,21 +1,13 @@
-name: Deploy to neocities
-
-# only run on changes to main
-on:
-  push:
-    branches:
-      - main
+name: 'My Workflow'
+on: [push]
 
 jobs:
   deploy:
+    name: 'Deploy to Neocities'
     runs-on: ubuntu-latest
-
     steps:
-      
-      # When the dist_dir is ready, deploy it to neocities
-      - name: Deploy to neocities
-        uses: bcomnes/deploy-to-neocities@v2.0.2
+      - uses: actions/checkout@v1
+      - uses: kognise/neocities-deploy-action@v1
         with:
-          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-          cleanup: false
-          dist_dir: public
+          neocities_token: ${{ secrets.NEOCITIES_TOKEN }}
+          directory: '.'
