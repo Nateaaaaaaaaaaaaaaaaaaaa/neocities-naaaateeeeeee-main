@@ -8,8 +8,8 @@ body {
 }
 .userText {
   color: PaleVioletRed;
-  font-size: 60px;
-  border: 10px solid Fuchsia;
+  font-size: 40px;
+  border: 7px groove Fuchsia;
   padding: 10px;
   max-width: fit-content;
   margin-left: auto;
@@ -24,4 +24,9 @@ body {
 .entry {
   font-size: 20px;
   color: pink;
+}
+.contentType {
+  border: 5px mediumpurple;
+  border-style: inset;
+  padding: 5px;
 }
