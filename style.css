@@ -9,7 +9,7 @@ body {
 .userText {
   color: PaleVioletRed;
   font-size: 40px;
-  border: 7px groove Fuchsia;
+
   padding: 10px;
   max-width: fit-content;
   margin-left: auto;
@@ -27,6 +27,5 @@ body {
 }
 .contentType {
   border: 5px mediumpurple;
-  border-style: inset;
   padding: 10px;
 }
